@@ -1,0 +1,25 @@
+---
+layout: post
+title: vim
+date: 2017-12-14 00:00:00 +08
+categories: vim
+---
+## copy && paste
+* line cp  
+	yy copy line复制游标所在行整行。或大写一个Y。  
+	2yy 或y2y复制两行。 ㄟ ，请举一反三好不好！ :-)  
+
+	y^ 复制至行首，或y0。不含游标所在处字元。   
+	y$ 复制至行尾。含游标所在处字元。  
+
+* word cp  
+	yw 复制一个word。  
+	y2w 复制两个字（单词）。  
+
+* doc cp  
+	yG 复制至档尾。  
+	y1G 复制至档首。  
+	
+* paste  
+	p 小写p代表贴至游标后（下）。   
+	P 大写P代表贴至游标前（上）。
