@@ -1,12 +1,22 @@
 ---
 layout: post
 title: vim
-date: 2017-12-14 00:00:00 +08
+date: 2017-12-14 14:30:00 +08
 categories: vim
 ---
+## vimrc
+edit .vimrc file of home folder
+
+	set nu
+	set cindent
+	set smartindent
+	set ai!
+	set foldmethod=syntax
+	nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+	
 ## copy && paste
 * line cp  
-	yy copy line复制游标所在行整行。或大写一个Y。  
+	yy 复制游标所在行整行。或大写一个Y。  
 	2yy 或y2y复制两行。 ㄟ ，请举一反三好不好！ :-)  
 
 	y^ 复制至行首，或y0。不含游标所在处字元。   
