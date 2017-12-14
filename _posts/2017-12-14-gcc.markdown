@@ -1,0 +1,34 @@
+---
+layout: post
+title: gcc tip note
+date: 2017-12-14 17:05:00 +08
+categories: C
+---
+## link lib
+for example link math lib  
+gcc main.c -lm  
+man pow  
+
+	POW(3)                                                                                            Linux Programmer's Manual                                                                                            POW(3)
+
+	NAME
+		   pow, powf, powl - power functions
+
+	SYNOPSIS
+		   #include <math.h>
+
+		   double pow(double x, double y);
+		   float powf(float x, float y);
+		   long double powl(long double x, long double y);
+
+		   Link with -lm.
+
+	   Feature Test Macro Requirements for glibc (see feature_test_macros(7)):
+
+		   powf(), powl():
+			   _BSD_SOURCE || _SVID_SOURCE || _XOPEN_SOURCE >= 600 || _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L;
+			   or cc -std=c99
+
+	DESCRIPTION
+		   These functions return the value of x raised to the power of y.
+	
